@@ -76,6 +76,31 @@ The system is divided into multiple components:
 - Scenario simulation
 - Quiz functionality
 
+# Cyber Intelligence System (CIS) v3.0
+**PROG6221 - Portfolio of Evidence (Part 3)**
 
+## Overview
+The Cyber Intelligence System is a modular C# Windows Forms desktop application developed to educate users on cybersecurity best practices. Transitioning from a foundational command-line interface into a decoupled graphical desktop environment, this platform features an NLP-driven chatbot, a dynamic multi-format assessment game, a secure SQLite-backed Task Assistant, and a paginated activity logging system.
+
+## Key Features
+* **Decoupled GUI Architecture:** Utilizes a central routing shell (`MainForm`) that dynamically swaps functional `UserControls`, ensuring strict Object-Oriented separation of visual layouts and processing logic.
+* **Advanced NLP Chat Engine:** Abandons basic string matching for a robust Regular Expression (Regex) dictionary, accurately detecting over 20 distinct cybersecurity intents. .
+* **Voice Accessibility:** Integrates asynchronous Text-to-Speech (`System.Speech.Synthesis`) to read chatbot responses aloud without freezing the main UI thread.
+* **Task Assistant (SQLite):** A fully integrated relational database tier executing secure, parameterized CRUD operations for user tasks, complete with an asynchronous background reminder system.
+* **Interactive Cyber Quiz:** A dynamic 20-question assessment engine that programmatically adapts its interface (e.g., hiding unused buttons for True/False inputs) at runtime to provide specialized educational feedback.
+* **Paginated System Logs:** Centralized tracking of internal actions (NLP intercepts, logins, database writes) into a local `log.txt` file, displayed through a custom LINQ-driven 8-line pagination UI.
+
+## Prerequisites
+To compile and run this application, ensure your environment meets the following requirements:
+* **Operating System:** Windows 10 or higher.
+* **IDE:** Microsoft Visual Studio 2022 (or newer).
+* **Framework:** .NET SDK (Compatible with Windows Forms).
+* **Dependencies:** `Microsoft.Data.Sqlite` (Available via NuGet).
+
+## Setup & Installation Instructions
+1. **Clone the Repository:**
+   Open your terminal or Git Bash and run:
+   ```bash
+   git clone <your-github-repository-url-here>
 ## Author
 ofentse
